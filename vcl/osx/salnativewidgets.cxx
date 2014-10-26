@@ -558,7 +558,7 @@ bool AquaSalGraphics::drawNativeControl(ControlType nType,
                         [NSNumber numberWithBool:NO], @"kCUIWindowFrameDrawTitleSeparatorKey",
                         [NSNumber numberWithBool:YES], @"is.flipped",
                         nil],
-                        nil);;
+                        (const __CFDictionary**)nil);;
             }
             else
             {
