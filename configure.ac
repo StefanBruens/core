@@ -7173,6 +7173,11 @@ if test $_os = iOS; then
     with_ppds=no
 fi
 
+if test "$_os" = "Darwin" -a "$with_macosx_sdk" = "10.5"; then
+    enable_opengl=no
+    enable_opencl=no
+fi
+
 ENABLE_LWP=
 if test "$enable_lotuswordpro" = "yes"; then
     ENABLE_LWP="TRUE"
